@@ -1,0 +1,10 @@
+Common\CommonStep.class
+PageObjects\ShopPageObjects.class
+PageObjects\CartPageObjects.class
+StepDef\ShopAndCartStepDef.class
+PageObjects\ContactPageObjects.class
+PageObjects\navBarObjects.class
+PageObjects\HomePageObjects.class
+StepDef\ContactPageStepDef.class
+runner\TestRunner.class
+StepDef\Hooks.class

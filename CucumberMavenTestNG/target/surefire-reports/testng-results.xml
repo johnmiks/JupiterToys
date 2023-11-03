@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="0" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-30T18:35:34 CST" name="Jupiter Toys Suite" finished-at="2023-10-30T18:35:41 CST" duration-ms="6826">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-10-30T18:35:34 CST" name="Test" finished-at="2023-10-30T18:35:41 CST" duration-ms="6826">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:34 CST" name="setUpClass" finished-at="2023-10-30T18:35:35 CST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13526e59]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3181" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3122" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successfully added to cart and validate price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shop page and Cart functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at StepDef.ShopAndCartStepDef.i_am_on_the_jupiter_toys_shop_page(ShopAndCartStepDef.java:72)
+at ✽.I am on the Jupiter Toys shop page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/Shop.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3122" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Unsuccessful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3087" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3306" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="3228" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Unsuccessful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:35 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-30T18:35:38 CST" duration-ms="2935" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful submission of info and message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contact page functionality for Jupiter Toys website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "StepDef.Hooks.getWebDriver()" because "this.hooks" is null
+at StepDef.ContactPageStepDef.i_am_on_the_jupiter_toys_contact_page(ContactPageStepDef.java:30)
+at ✽.I am on the Jupiter Toys contact page(file:///C:/Users/johnm/eclipse-workspace/Sample_Maven_TestNG/src/test/resources/features/contact.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@35dab4eb]" started-at="2023-10-30T18:35:38 CST" name="tearDownClass" finished-at="2023-10-30T18:35:41 CST" duration-ms="2933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Jupiter Toys Suite -->
+</testng-results>
