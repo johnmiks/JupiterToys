@@ -12,7 +12,6 @@ public class ShopPageObjects {
 	
 	public ShopPageObjects(WebDriver driver) {
 		this.driver = driver;
-
 		commonStep = new CommonStep(driver);
 	}
 	

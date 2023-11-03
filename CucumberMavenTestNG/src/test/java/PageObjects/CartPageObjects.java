@@ -24,18 +24,14 @@ public class CartPageObjects {
 	
 	By btn_checkOut = By.xpath("//a[contains(text(),'Check Out')]");
 	By btn_emptyCart = By.xpath("//a[contains(text(),'Empty Cart')]");
-	By txt_total = By.xpath("//strong[contains(text(),'Total: ')]");
+	By txt_total = By.xpath("//strong[@class='total ng-binding' and contains(text(),'Total: ')]");
 	By item_table = By.xpath("//tbody/child::tr");
 	
-	public WebElement verify_itemTable() {
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(item_table));
-	}
 	public int verify_itemTableSize() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(item_table));
 		return driver.findElements(item_table).size();
 	}
 	public String get_itemSubtotal(int ItemNumber) {
-		
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tbody/tr["+ItemNumber+"]/td[count(//th[contains(text(),'Subtotal')]/preceding-sibling::th)+1]"))).getText();
 	}
 	public String get_itemQuantity(int ItemNumber){ 

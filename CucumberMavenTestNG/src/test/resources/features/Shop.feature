@@ -9,6 +9,6 @@ Feature: Shop page and Cart functionality for Jupiter Toys website
   When I take note of the price and buy 2 "Stuffed Frog"
   And I take note of the price and buy 5 "Fluffy Bunny"
   And I take note of the price and buy 3 "Valentine Bear"
-  Then I should be able to verify if the price and total is correct
+  Then I should be able to verify if the price and total is correct in the cart
 
   

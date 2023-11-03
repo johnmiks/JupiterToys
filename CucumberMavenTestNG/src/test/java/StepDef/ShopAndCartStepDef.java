@@ -21,7 +21,6 @@ import io.cucumber.java.en.When;
 public class ShopAndCartStepDef{
 	private Hooks hooks;
 	private WebDriver driver;
-	
 
 	private ShopPageObjects shopPage;
 	private CartPageObjects cartPage;
@@ -32,15 +31,19 @@ public class ShopAndCartStepDef{
 		this.hooks = hooks;
 		driver = this.hooks.getWebDriver();
 	}
+	
 	public void storePrice(String item, String price) {
 		itemPrice.put(item.toString(), price);
 	}
+	
 	public Object getPrice(String item) {
 		return itemPrice.get(item.toString());
 	}
+	
 	public Boolean isContains(String item){
         return itemPrice.containsKey(item.toString());
     }	
+	
 	@Given("I am on the Shop page")
 	public void i_am_on_the_shop_page() {
 		driver.get("https://jupiter.cloud.planittesting.com/#/shop");
@@ -55,6 +58,7 @@ public class ShopAndCartStepDef{
 		String price = shopPage.buy_Item(item, qty);
 
 		storePrice(item,price);
+		
 		if(isContains(item)==null) {
 			storePrice(item,price);
 		}else if(isContains(item)){
@@ -64,9 +68,10 @@ public class ShopAndCartStepDef{
 		}
 	}
 	
-	@Then("I should be able to verify if the price and total is correct")
-	public void i_should_be_able_to_verify_if_the_price_and_total_is_correct() {
+	@Then("I should be able to verify if the price and total is correct in the cart")
+	public void i_should_be_able_to_verify_if_the_price_and_total_is_correct_in_the_cart() {
 		navBar.click_cart();
+		
 		try {
 			int a = cartPage.verify_itemTableSize();
 			double addedTotal = 0;
